@@ -1,15 +1,21 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const titilliumWebBold = localFont({
+  src: "./fonts/TitilliumWeb-Bold.ttf",
+  variable: "--font-titillium-web-bold",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const titilliumWebSemiBold = localFont({
+  src: "./fonts/TitilliumWeb-SemiBold.ttf",
+  variable: "--font-titillium-web-semi-bold",
+});
+const titilliumWebRegular = localFont({
+  src: "./fonts/TitilliumWeb-Regular.ttf",
+  variable: "--font-titillium-web-regular",
+});
+const titilliumWebLight = localFont({
+  src: "./fonts/TitilliumWeb-Light.ttf",
+  variable: "--font-titillium-web-light",
 });
 
 export const metadata = {
@@ -21,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${titilliumWebBold.variable} ${titilliumWebLight.variable} ${titilliumWebRegular.variable} ${titilliumWebSemiBold.variable} antialiased`}
       >
         {children}
       </body>
