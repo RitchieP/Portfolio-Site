@@ -2,6 +2,8 @@ import Image from "next/image";
 import { TbCircleArrowUpRight } from "react-icons/tb";
 import { FaRegPaperPlane, FaGithub, FaStackOverflow  } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { RiFlutterFill } from "react-icons/ri";
+import { SiHuggingface, SiPython } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -77,11 +79,34 @@ export default function Home() {
 
       {/* Projects section */}
       <p className="p-10 text-5xl font-[family-name:var(--font-titillium-web-bold)]">Projects</p>
-      <div className="grid grid-cols-2 gap-10 p-10">
+      <div className="grid grid-cols-2 gap-10 p-10 place-items-center">
 
         <div className="w-[542px]">
-          {/* TODO: Replace this with Image later */}
-          <div className="w-[542px] h-[365px] bg-unhighlighted rounded-3xl"></div>
+          <div className="w-[542px] grid grid-cols-1 grid-rows-1 items-end">
+            {/* TODO: Replace this with Image later */}
+            <Image 
+              src="/verbalex.png" 
+              alt="VerbaLex Thumbnail" 
+              width={542} 
+              height={365} 
+              priority
+              className="rounded-3xl col-start-1 row-start-1"
+            />
+            <div className="h-14 bg-white/50 backdrop-blur-[2px] col-start-1 row-start-1 rounded-b-3xl flex flex-row items-center p-10 gap-10">
+              <div className="place-items-center">
+                <RiFlutterFill size={30}/>
+                <p>Flutter</p>
+              </div>
+              <div className="place-items-center">
+                <SiHuggingface size={30}/>
+                <p>Huggingface</p>
+              </div>
+              <div className="place-items-center">
+                <SiPython size={30}/>
+                <p>Python</p>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="py-4 text-5xl font-[family-name:var(--font-titillium-web-semi-bold)]">VerbaLex</p>
             <TbCircleArrowUpRight className="size-10"/>
@@ -177,13 +202,13 @@ export default function Home() {
       {/* Contact me section */}
       <p className="px-10 pt-10 text-5xl font-[family-name:var(--font-titillium-web-bold)]">Interested in <span className="text-secondary">joining forces?</span></p>
       <div className="px-10 mb-10 grid grid-cols-11">
-      <a
-        className="my-4 p-2 flex flex-row items-center gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]"
-        href="mailto:ritchiepoh@gmail.com"
-        target="_blank"
-      >
-        Let's Chat! <FaRegPaperPlane color="white"/> 
-      </a>
+        <a
+          className="my-4 p-2 flex flex-row items-center gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]"
+          href="mailto:ritchiepoh@gmail.com"
+          target="_blank"
+        >
+          Let's Chat! <FaRegPaperPlane color="white"/> 
+        </a>
       </div>
     </div>
   );
