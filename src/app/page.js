@@ -296,7 +296,7 @@ export default function Home() {
                       md:grid-cols-5
                       lg:px-20 lg:grid-cols-10
                       xl:grid-cols-12
-                      2xl:px-32 2xl:grid-cols-11">
+                      2xl:px-32 2xl:grid-cols-9">
         <a
           className="my-8 p-2 flex flex-row items-center justify-center text-xs col-start-2 gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]
                      md:col-start-3 md:text-lg
