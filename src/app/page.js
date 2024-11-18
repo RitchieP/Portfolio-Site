@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { TbCircleArrowUpRight } from "react-icons/tb";
 import { FaRegPaperPlane, FaGithub, FaStackOverflow  } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -9,30 +10,30 @@ export default function Home() {
   return (
     <div>
       {/* First impression of the home page */}
-      <div className="flex flex-row flex-wrap-reverse p-10 mt-10 place-items-center">
-        <div className="basis-2/3 tracking-widest font-[family-name:var(--font-titillium-web-light)] ">
-          <p className="xl:text-3xl 2xl:text-6xl">
+      <div className="flex flex-row flex-wrap-reverse mt-10 place-items-center justify-center">
+        <div className="mt-10 text-center basis-2/3 tracking-widest font-[family-name:var(--font-titillium-web-light)] ">
+          <p className="text-3xl xl:text-3xl 2xl:text-6xl">
             Hi, I'm <span className="text-secondary">Ritchie</span>
           </p>
-          <p className="my-4 text-5xl font-[family-name:var(--font-titillium-web-bold)]">
+          <p className="my-4 text-4xl font-[family-name:var(--font-titillium-web-bold)]">
             Software Engineer
           </p>
-          <p className="text-2xl">
+          <p className="text-lg">
             based in Penang, Malaysia <br/>
             Major in AI and minor in Mathematics
           </p>
-          <div className="flex flex-row items-center justify-start gap-28">
+          <div className="flex flex-row items-center justify-center gap-10">
             <a
-              className="my-4 p-2 flex flex-row items-center gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]"
+              className="text-sm my-4 p-2 flex flex-row items-center gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]"
               href="mailto:ritchiepoh@gmail.com"
               target="_blank"
             >
               Let's Chat! <FaRegPaperPlane color="white"/> 
             </a>
-            <div className="grid grid-cols-3 gap-5">
-              <a href="https://www.linkedin.com/in/ritchie-p/" target="_blank"><CiLinkedin size={50}/></a>
-              <a href="https://github.com/RitchieP" target="_blank"><FaGithub size={50}/></a>
-              <a href="https://stackoverflow.com/users/13328625/invalidhop" target="_blank"><FaStackOverflow size={50}/></a>
+            <div className="grid grid-cols-3 gap-2">
+              <a href="https://www.linkedin.com/in/ritchie-p/" target="_blank"><CiLinkedin className="h-6 w-6"/></a>
+              <a href="https://github.com/RitchieP" target="_blank"><FaGithub className="h-6 w-6"/></a>
+              <a href="https://stackoverflow.com/users/13328625/invalidhop" target="_blank"><FaStackOverflow className="h-6 w-6"/></a>
             </div>
           </div>
         </div>
@@ -40,7 +41,7 @@ export default function Home() {
         {/* Image of me */}
         <div className="basis-1/3">
           <Image
-            className="rounded-full border-2 border-secondary p-5"
+            className="rounded-full border-2 border-secondary p-5 min-w-52"
             src="/profile_pic.jpg"
             alt="Picture of the author"
             width={300}
@@ -51,26 +52,26 @@ export default function Home() {
       </div>
 
       {/* Experience section */}
-      <p className="p-10 text-5xl font-[family-name:var(--font-titillium-web-bold)]">Experience</p>
-      <div className="flex flex-col my-5 px-10">
-        <div className="mb-5">
-          <p className="text-3xl font-[family-name:var(--font-titillium-web-semi-bold)]">
+      <p className="mt-10 px-10 text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]">Experience</p>
+      <div className="flex flex-col my-5 px-10 text-center">
+        <div className="mt-5">
+          <p className="text-2xl font-[family-name:var(--font-titillium-web-semi-bold)]">
             Part time <span className="text-secondary">Research and Development Engineer</span> @ Assassins Robotics
           </p>
-          <p className="text-unhighlighted font-[family-name:var(--font-titillium-web-light)]">January 2019 - Present</p>
-          <ul className="text-2xl list-disc px-10 my-5 font-[family-name:var(--font-titillium-web-regular)]">
+          <p className="text-unhighlighted text-sm font-[family-name:var(--font-titillium-web-light)]">January 2019 - Present</p>
+          <ul className="text-lg text-justify leading-relaxed list-disc px-10 my-5 font-[family-name:var(--font-titillium-web-regular)]">
             <li>Research and develop advanced robotics toolkits and algorithms with Python.</li>
             <li>Teaches students aged 7 to 15 about concepts in robotics and programming.</li>
             <li>Prepares students for tournaments, this includes brainstorming ideas, extensive testing on the robot, preparing test logs, and presentation practices.</li>
           </ul>
         </div>
 
-        <div>
-          <p className="text-3xl font-[family-name:var(--font-titillium-web-semi-bold)]">
+        <div className="mt-5">
+          <p className="text-2xl font-[family-name:var(--font-titillium-web-semi-bold)]">
             <span className="text-secondary">Software Engineer Intern</span> @ CodeTrace Sdn Bhd
           </p>
-          <p className="text-unhighlighted font-[family-name:var(--font-titillium-web-light)]">March 2023 - August 2023</p>
-          <ul className="text-2xl list-disc px-10 my-5 font-[family-name:var(--font-titillium-web-regular)]">
+          <p className="text-unhighlighted text-sm font-[family-name:var(--font-titillium-web-light)]">March 2023 - August 2023</p>
+          <ul className="text-lg text-justify leading-relaxed list-disc px-10 my-5 font-[family-name:var(--font-titillium-web-regular)]">
             <li>Developed and shipped an automated PDF data extraction software using ReactJS and Python. Wrapped into a desktop application using ElectronJS.</li>
             <li>Built and hosted an inventory management system with ReactJS combined with Tailwind CSS connected to a Firebase backend.</li>
           </ul>
@@ -78,11 +79,11 @@ export default function Home() {
       </div>
 
       {/* Projects section */}
-      <p className="p-10 text-5xl font-[family-name:var(--font-titillium-web-bold)]">Projects</p>
-      <div className="grid grid-cols-2 gap-10 p-10 place-items-center">
+      <p className="mt-10 px-10 text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]">Projects</p>
+      <div className="grid grid-cols-1 gap-10 p-10 place-items-center">
 
-        <div className="w-[542px]">
-          <div className="w-[542px] grid grid-cols-1 grid-rows-1 items-end">
+        <div className="w-[360px]">
+          <div className="w-[360px] grid grid-cols-1 grid-rows-1 items-end">
             <Image 
               src="/verbalex.png" 
               alt="VerbaLex Thumbnail" 
@@ -91,95 +92,95 @@ export default function Home() {
               priority
               className="rounded-3xl col-start-1 row-start-1"
             />
-            <div className="h-14 bg-white/50 backdrop-blur-[2px] col-start-1 row-start-1 rounded-b-3xl flex flex-row items-center p-10 gap-10">
+            <div className="bg-white/50 backdrop-blur-[2px] col-start-1 row-start-1 rounded-b-3xl flex flex-row items-center px-10 py-2 gap-10 text-sm">
               <div className="place-items-center">
-                <RiFlutterFill size={30}/>
+                <RiFlutterFill className="h-5 w-5"/>
                 <p>Flutter</p>
               </div>
               <div className="place-items-center">
-                <SiHuggingface size={30}/>
+                <SiHuggingface className="h-5 w-5"/>
                 <p>Huggingface</p>
               </div>
               <div className="place-items-center">
-                <SiPython size={30}/>
+                <SiPython className="h-5 w-5"/>
                 <p>Python</p>
               </div>
             </div>
           </div>
           <div className="flex flex-row place-items-center justify-between">
-            <p className="py-4 text-5xl font-[family-name:var(--font-titillium-web-semi-bold)]">VerbaLex</p>
-            <a href="https://github.com/RitchieP/VerbaLex" target="blank"><TbCircleArrowUpRight className="size-10"/></a>
+            <p className="py-4 text-4xl font-[family-name:var(--font-titillium-web-semi-bold)]">VerbaLex</p>
+            <Link href={"https://github.com/RitchieP/VerbaLex"} target="blank"><TbCircleArrowUpRight className="size-8"/></Link>
           </div>
-          <p className="text-2xl text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Text-to-speech application to help transcribe accented speech.</p>
+          <p className="text-lg text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Text-to-speech application to help transcribe accented speech.</p>
         </div>
 
-        <div className="w-[542px]">
+        <div className="w-[360px]">
           {/* TODO: Replace this with Image later */}
-          <div className="w-[542px] grid grid-cols-1 grid-rows-1 items-end">
+          <div className="w-[360px] grid grid-cols-1 grid-rows-1 items-end">
             <Image 
               src="/myrescue.png" 
-              alt="VerbaLex Thumbnail" 
+              alt="MyRescue Thumbnail" 
               width={542} 
               height={365} 
               priority
               className="rounded-3xl col-start-1 row-start-1"
             />
-            <div className="h-14 bg-white/50 backdrop-blur-[2px] col-start-1 row-start-1 rounded-b-3xl flex flex-row items-center p-10 gap-10">
+            <div className="bg-white/50 backdrop-blur-[2px] col-start-1 row-start-1 rounded-b-3xl flex flex-row items-center px-10 py-2 gap-10 text-sm">
               <div className="place-items-center">
-                <RiFlutterFill size={30}/>
+                <RiFlutterFill className="h-5 w-5"/>
                 <p>Flutter</p>
               </div>
               <div className="place-items-center">
-                <SiFirebase size={30}/>
+                <SiFirebase className="h-5 w-5"/>
                 <p>Firebase</p>
               </div>
               <div className="place-items-center">
-                <SiGooglemaps size={30}/>
+                <SiGooglemaps className="h-5 w-5"/>
                 <p>Google Maps API</p>
               </div>
             </div>
           </div>
           <div className="flex flex-row place-items-center justify-between">
-            <p className="py-4 text-5xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyRescue</p>
-            <a href="https://github.com/RitchieP/my_rescue" target="blank"><TbCircleArrowUpRight className="size-10"/></a>
+            <p className="py-4 text-4xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyRescue</p>
+            <a href="https://github.com/RitchieP/my_rescue" target="blank"><TbCircleArrowUpRight className="size-8"/></a>
           </div>
-          <p className="text-2xl text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Resource management system during a natural disaster.</p>
+          <p className="text-lg text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Resource management system during a natural disaster.</p>
         </div>
 
-        <div className="w-[542px]">
+        <div className="w-[360px]">
           {/* TODO: Replace this with Image later */}
-          <div className="w-[542px] grid grid-cols-1 grid-rows-1 items-end">
+          <div className="w-[360px] grid grid-cols-1 grid-rows-1 items-end">
             <Image 
               src="/myusm.png" 
-              alt="VerbaLex Thumbnail" 
+              alt="MyUSM Thumbnail" 
               width={542} 
               height={365} 
               priority
               className="rounded-3xl col-start-1 row-start-1"
             />
-            <div className="h-14 bg-white/50 backdrop-blur-[2px] col-start-1 row-start-1 rounded-b-3xl flex flex-row items-center p-10 gap-10">
+            <div className="bg-white/50 backdrop-blur-[2px] col-start-1 row-start-1 rounded-b-3xl flex flex-row items-center px-10 py-2 gap-10 text-sm">
               <div className="place-items-center">
-                <RiFlutterFill size={30}/>
+                <RiFlutterFill className="h-5 w-5"/>
                 <p>Flutter</p>
               </div>
               <div className="place-items-center">
-                <SiFirebase size={30}/>
+                <SiFirebase className="h-5 w-5"/>
                 <p>Firebase</p>
               </div>
             </div>
           </div>
           <div className="flex flex-row place-items-center justify-between">
-            <p className="py-4 text-5xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyUSM</p>
-            <a href="https://github.com/GDSC-USM/MyUSM" target="blank"><TbCircleArrowUpRight className="size-10"/></a>
+            <p className="py-4 text-4xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyUSM</p>
+            <a href="https://github.com/GDSC-USM/MyUSM" target="blank"><TbCircleArrowUpRight className="size-8"/></a>
           </div>
-          <p className="text-2xl text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Centralized information system for all individuals associated with Universiti Sains Malaysia.</p>
+          <p className="text-lg text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Centralized information system for all individuals associated with Universiti Sains Malaysia.</p>
         </div>
 
       </div>
 
       {/* Skills section */}
-      <p className="p-10 text-5xl font-[family-name:var(--font-titillium-web-bold)]">Skills</p>
-      <div className="flex flex-row flex-wrap place-content-center gap-56 p-10">
+      <p className="mt-10 px-10 text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]">Skills</p>
+      <div className="my-5 flex flex-col justify-center place-items-center md:flex-row md:flex-wrap place-content-center gap-10 text-center">
         <div>
           <p className="text-3xl font-[family-name:var(--font-titillium-web-bold)]">Frontend</p>
           <ul className="mt-4 text-2xl font-[family-name:var(--font-titillium-web-regular)]">
@@ -221,8 +222,8 @@ export default function Home() {
       </div>
 
       {/* About me section */}
-      <p className="p-10 text-5xl font-[family-name:var(--font-titillium-web-bold)]">How I got here?</p>
-      <div className="p-10 text-2xl text-justify font-[family-name:var(--font-titillium-web-regular)]">
+      <p className="mt-10 px-10 text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]">How I got here?</p>
+      <div className="p-10 text-xl text-justify font-[family-name:var(--font-titillium-web-regular)]">
         <p>
         My story as a developer began back in <span className="text-secondary">2016</span>, when I joined the robotics club back in high school. That was the first ever time I was able to turn a few lines of blocks into actual output, tangible by hand.
         <br/>
@@ -241,10 +242,10 @@ export default function Home() {
       </div>
 
       {/* Contact me section */}
-      <p className="px-10 pt-10 text-5xl font-[family-name:var(--font-titillium-web-bold)]">Interested in <span className="text-secondary">joining forces?</span></p>
-      <div className="px-10 mb-10 grid grid-cols-11">
+      <p className="mt-10 px-10  text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]">Interested in <span className="text-secondary">joining forces?</span></p>
+      <div className="px-10 mb-10 grid grid-cols-3">
         <a
-          className="my-4 p-2 flex flex-row items-center gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]"
+          className="my-8 p-2 flex flex-row items-center col-start-2 gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]"
           href="mailto:ritchiepoh@gmail.com"
           target="_blank"
         >
