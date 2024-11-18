@@ -3,7 +3,7 @@ import { TbCircleArrowUpRight } from "react-icons/tb";
 import { FaRegPaperPlane, FaGithub, FaStackOverflow  } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { RiFlutterFill } from "react-icons/ri";
-import { SiHuggingface, SiPython } from "react-icons/si";
+import { SiHuggingface, SiPython, SiFirebase, SiGooglemaps } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -83,7 +83,6 @@ export default function Home() {
 
         <div className="w-[542px]">
           <div className="w-[542px] grid grid-cols-1 grid-rows-1 items-end">
-            {/* TODO: Replace this with Image later */}
             <Image 
               src="/verbalex.png" 
               alt="VerbaLex Thumbnail" 
@@ -109,27 +108,69 @@ export default function Home() {
           </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="py-4 text-5xl font-[family-name:var(--font-titillium-web-semi-bold)]">VerbaLex</p>
-            <TbCircleArrowUpRight className="size-10"/>
+            <a href="https://github.com/RitchieP/VerbaLex" target="blank"><TbCircleArrowUpRight className="size-10"/></a>
           </div>
           <p className="text-2xl text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Text-to-speech application to help transcribe accented speech.</p>
         </div>
 
         <div className="w-[542px]">
           {/* TODO: Replace this with Image later */}
-          <div className="w-[542px] h-[365px] bg-unhighlighted rounded-3xl"></div>
+          <div className="w-[542px] grid grid-cols-1 grid-rows-1 items-end">
+            <Image 
+              src="/myrescue.png" 
+              alt="VerbaLex Thumbnail" 
+              width={542} 
+              height={365} 
+              priority
+              className="rounded-3xl col-start-1 row-start-1"
+            />
+            <div className="h-14 bg-white/50 backdrop-blur-[2px] col-start-1 row-start-1 rounded-b-3xl flex flex-row items-center p-10 gap-10">
+              <div className="place-items-center">
+                <RiFlutterFill size={30}/>
+                <p>Flutter</p>
+              </div>
+              <div className="place-items-center">
+                <SiFirebase size={30}/>
+                <p>Firebase</p>
+              </div>
+              <div className="place-items-center">
+                <SiGooglemaps size={30}/>
+                <p>Google Maps API</p>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="py-4 text-5xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyRescue</p>
-            <TbCircleArrowUpRight className="size-10"/>
+            <a href="https://github.com/RitchieP/my_rescue" target="blank"><TbCircleArrowUpRight className="size-10"/></a>
           </div>
           <p className="text-2xl text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Resource management system during a natural disaster.</p>
         </div>
 
         <div className="w-[542px]">
           {/* TODO: Replace this with Image later */}
-          <div className="w-[542px] h-[365px] bg-unhighlighted rounded-3xl"></div>
+          <div className="w-[542px] grid grid-cols-1 grid-rows-1 items-end">
+            <Image 
+              src="/myusm.png" 
+              alt="VerbaLex Thumbnail" 
+              width={542} 
+              height={365} 
+              priority
+              className="rounded-3xl col-start-1 row-start-1"
+            />
+            <div className="h-14 bg-white/50 backdrop-blur-[2px] col-start-1 row-start-1 rounded-b-3xl flex flex-row items-center p-10 gap-10">
+              <div className="place-items-center">
+                <RiFlutterFill size={30}/>
+                <p>Flutter</p>
+              </div>
+              <div className="place-items-center">
+                <SiFirebase size={30}/>
+                <p>Firebase</p>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="py-4 text-5xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyUSM</p>
-            <TbCircleArrowUpRight className="size-10"/>
+            <a href="https://github.com/GDSC-USM/MyUSM" target="blank"><TbCircleArrowUpRight className="size-10"/></a>
           </div>
           <p className="text-2xl text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Centralized information system for all individuals associated with Universiti Sains Malaysia.</p>
         </div>
