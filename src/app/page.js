@@ -22,17 +22,20 @@ export default function Home() {
             Hi, I'm <span className="text-secondary">Ritchie</span>
           </p>
           <p className="my-4 text-4xl font-[family-name:var(--font-titillium-web-bold)]
-                        lg:text-5xl">
+                        lg:text-5xl
+                        xl:text-6xl">
             Software Engineer
           </p>
           <p className="text-lg
-                        lg:text-2xl">
+                        lg:text-2xl
+                        xl:text-3xl">
             based in Penang, Malaysia <br/>
             Major in AI and minor in Mathematics
           </p>
           <div className="flex flex-row items-center justify-center gap-10
                           md:justify-start md:gap-20
-                          lg:gap-36">
+                          lg:gap-36
+                          xl:gap-52">
             <a
               className="text-sm my-4 p-2 flex flex-row items-center gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]
                          lg:text-lg"
@@ -72,9 +75,11 @@ export default function Home() {
                         lg:text-3xl">
             Part time <span className="text-secondary">Research and Development Engineer</span> @ Assassins Robotics
           </p>
-          <p className="text-unhighlighted text-sm font-[family-name:var(--font-titillium-web-light)]">January 2019 - Present</p>
+          <p className="text-unhighlighted text-sm font-[family-name:var(--font-titillium-web-light)]
+                        xl:text-xl">January 2019 - Present</p>
           <ul className="text-lg text-justify leading-relaxed list-disc px-10 my-5 font-[family-name:var(--font-titillium-web-regular)]
-                         md:text-xl">
+                         md:text-xl
+                         xl:text-2xl">
             <li>Research and develop advanced robotics toolkits and algorithms with Python.</li>
             <li>Teaches students aged 7 to 15 about concepts in robotics and programming.</li>
             <li>Prepares students for tournaments, this includes brainstorming ideas, extensive testing on the robot, preparing test logs, and presentation practices.</li>
@@ -86,9 +91,11 @@ export default function Home() {
                         lg:text-3xl">
             <span className="text-secondary">Software Engineer Intern</span> @ CodeTrace Sdn Bhd
           </p>
-          <p className="text-unhighlighted text-sm font-[family-name:var(--font-titillium-web-light)]">March 2023 - August 2023</p>
+          <p className="text-unhighlighted text-sm font-[family-name:var(--font-titillium-web-light)]
+                        xl:text-xl">March 2023 - August 2023</p>
           <ul className="text-lg text-justify leading-relaxed list-disc px-10 my-5 font-[family-name:var(--font-titillium-web-regular)]
-                         md:text-xl">
+                         md:text-xl
+                         xl:text-2xl">
             <li>Developed and shipped an automated PDF data extraction software using ReactJS and Python. Wrapped into a desktop application using ElectronJS.</li>
             <li>Built and hosted an inventory management system with ReactJS combined with Tailwind CSS connected to a Firebase backend.</li>
           </ul>
@@ -101,8 +108,8 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-10 p-10 place-items-center
                       lg:px-20 lg:grid-cols-2">
         
-        <div className="w-[360px] md:w-[480px] lg:w-[360px]">
-          <div className="w-[360px] md:w-[480px] lg:w-[360px] grid grid-cols-1 grid-rows-1 items-end">
+        <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px]">
+          <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] grid grid-cols-1 grid-rows-1 items-end">
             <Image 
               src="/verbalex.png" 
               alt="VerbaLex Thumbnail" 
@@ -129,13 +136,13 @@ export default function Home() {
           </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="pt-4 text-4xl font-[family-name:var(--font-titillium-web-semi-bold)]">VerbaLex</p>
-            <Link href={"https://github.com/RitchieP/VerbaLex"} target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9"/></Link>
+            <Link href={"https://github.com/RitchieP/VerbaLex"} target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9 xl:size-10"/></Link>
           </div>
           <p className="text-lg text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Text-to-speech application to help transcribe accented speech.</p>
         </div>
 
-        <div className="w-[360px] md:w-[480px] lg:w-[360px]">
-          <div className="w-[360px] md:w-[480px] lg:w-[360px] grid grid-cols-1 grid-rows-1 items-end">
+        <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px]">
+          <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] grid grid-cols-1 grid-rows-1 items-end">
             <Image 
               src="/myrescue.png" 
               alt="MyRescue Thumbnail" 
@@ -161,14 +168,14 @@ export default function Home() {
           </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="pt-4 text-4xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyRescue</p>
-            <a href="https://github.com/RitchieP/my_rescue" target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9"/></a>
+            <a href="https://github.com/RitchieP/my_rescue" target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9 xl:size-10"/></a>
           </div>
           <p className="text-lg text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Resource management system during a natural disaster.</p>
         </div>
 
-        <div className="w-[360px] md:w-[480px] lg:w-[360px]">
+        <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px]">
           {/* TODO: Replace this with Image later */}
-          <div className="w-[360px] md:w-[480px] lg:w-[360px] grid grid-cols-1 grid-rows-1 items-end">
+          <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] grid grid-cols-1 grid-rows-1 items-end">
             <Image 
               src="/myusm.png" 
               alt="MyUSM Thumbnail" 
@@ -190,7 +197,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="pt-4 text-4xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyUSM</p>
-            <a href="https://github.com/GDSC-USM/MyUSM" target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9"/></a>
+            <a href="https://github.com/GDSC-USM/MyUSM" target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9 xl:size-10"/></a>
           </div>
           <p className="text-lg text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Centralized information system for all individuals associated with Universiti Sains Malaysia.</p>
         </div>
@@ -270,7 +277,8 @@ export default function Home() {
                     lg:px-20 lg:text-left">Interested in <span className="text-secondary">joining forces?</span></p>
       <div className="px-10 mb-10 grid grid-cols-3
                       md:grid-cols-5
-                      lg:px-20 lg:grid-cols-10">
+                      lg:px-20 lg:grid-cols-10
+                      xl:grid-cols-12">
         <a
           className="my-8 p-2 flex flex-row items-center justify-center text-xs col-start-2 gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]
                      md:col-start-3 md:text-lg
