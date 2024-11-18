@@ -12,42 +12,46 @@ export default function Home() {
       {/* First impression of the home page */}
       <div className="flex flex-row flex-wrap-reverse mt-10 place-items-center justify-center
                       md:px-16
-                      lg:px-20">
+                      lg:px-20
+                      2xl:px-32">
         <div className="mt-10 text-center basis-2/3 tracking-widest font-[family-name:var(--font-titillium-web-light)]
                         md:text-justify">
           <p className="text-3xl
                         lg:text-5xl
                         xl:text-6xl 
-                        2xl:text-6xl">
+                        2xl:text-7xl">
             Hi, I'm <span className="text-secondary">Ritchie</span>
           </p>
           <p className="my-4 text-4xl font-[family-name:var(--font-titillium-web-bold)]
                         lg:text-5xl
-                        xl:text-6xl">
+                        xl:text-6xl
+                        2xl:text-7xl">
             Software Engineer
           </p>
           <p className="text-lg
                         lg:text-2xl
-                        xl:text-3xl">
+                        xl:text-3xl
+                        2xl:text-4xl">
             based in Penang, Malaysia <br/>
             Major in AI and minor in Mathematics
           </p>
           <div className="flex flex-row items-center justify-center gap-10
                           md:justify-start md:gap-20
                           lg:gap-36
-                          xl:gap-52">
+                          xl:gap-56">
             <a
               className="text-sm my-4 p-2 flex flex-row items-center gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]
-                         lg:text-lg"
+                         lg:text-lg
+                         2xl:text-2xl"
               href="mailto:ritchiepoh@gmail.com"
               target="_blank"
             >
               Let's Chat! <FaRegPaperPlane color="white"/> 
             </a>
             <div className="grid grid-cols-3 gap-2 md:gap-4">
-              <a href="https://www.linkedin.com/in/ritchie-p/" target="_blank"><CiLinkedin className="h-6 w-6 md:h-9 md:w-9 lg:w-10 lg:h-10"/></a>
-              <a href="https://github.com/RitchieP" target="_blank"><FaGithub className="h-6 w-6 md:h-9 md:w-9 lg:w-10 lg:h-10"/></a>
-              <a href="https://stackoverflow.com/users/13328625/invalidhop" target="_blank"><FaStackOverflow className="h-6 w-6 md:h-9 md:w-9 lg:w-10 lg:h-10"/></a>
+              <a href="https://www.linkedin.com/in/ritchie-p/" target="_blank"><CiLinkedin className="h-6 w-6 md:h-9 md:w-9 lg:w-10 lg:h-10 2xl:w-12 2xl:h-12"/></a>
+              <a href="https://github.com/RitchieP" target="_blank"><FaGithub className="h-6 w-6 md:h-9 md:w-9 lg:w-10 lg:h-10 2xl:w-12 2xl:h-12"/></a>
+              <a href="https://stackoverflow.com/users/13328625/invalidhop" target="_blank"><FaStackOverflow className="h-6 w-6 md:h-9 md:w-9 lg:w-10 lg:h-10 2xl:w-12 2xl:h-12"/></a>
             </div>
           </div>
         </div>
@@ -67,19 +71,23 @@ export default function Home() {
 
       {/* Experience section */}
       <p className="mt-10 px-10 text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]
-                    lg:px-20 lg:text-left">Experience</p>
+                    lg:px-20 lg:text-left
+                    2xl:px-32 2xl:text-6xl">Experience</p>
       <div className="flex flex-col my-5 px-10 text-center
-                      lg:px-20 lg:text-left">
+                      lg:px-20 lg:text-left
+                      2xl:px-32">
         <div className="mt-5">
           <p className="text-2xl font-[family-name:var(--font-titillium-web-semi-bold)]
-                        lg:text-3xl">
+                        lg:text-3xl
+                        2xl:text-4xl">
             Part time <span className="text-secondary">Research and Development Engineer</span> @ Assassins Robotics
           </p>
           <p className="text-unhighlighted text-sm font-[family-name:var(--font-titillium-web-light)]
                         xl:text-xl">January 2019 - Present</p>
           <ul className="text-lg text-justify leading-relaxed list-disc px-10 my-5 font-[family-name:var(--font-titillium-web-regular)]
                          md:text-xl
-                         xl:text-2xl">
+                         xl:text-2xl
+                         2xl:leading-9">
             <li>Research and develop advanced robotics toolkits and algorithms with Python.</li>
             <li>Teaches students aged 7 to 15 about concepts in robotics and programming.</li>
             <li>Prepares students for tournaments, this includes brainstorming ideas, extensive testing on the robot, preparing test logs, and presentation practices.</li>
@@ -88,14 +96,16 @@ export default function Home() {
 
         <div className="mt-5">
           <p className="text-2xl font-[family-name:var(--font-titillium-web-semi-bold)]
-                        lg:text-3xl">
+                        lg:text-3xl
+                        2xl:text-4xl">
             <span className="text-secondary">Software Engineer Intern</span> @ CodeTrace Sdn Bhd
           </p>
           <p className="text-unhighlighted text-sm font-[family-name:var(--font-titillium-web-light)]
                         xl:text-xl">March 2023 - August 2023</p>
           <ul className="text-lg text-justify leading-relaxed list-disc px-10 my-5 font-[family-name:var(--font-titillium-web-regular)]
                          md:text-xl
-                         xl:text-2xl">
+                         xl:text-2xl
+                         2xl:leading-9">
             <li>Developed and shipped an automated PDF data extraction software using ReactJS and Python. Wrapped into a desktop application using ElectronJS.</li>
             <li>Built and hosted an inventory management system with ReactJS combined with Tailwind CSS connected to a Firebase backend.</li>
           </ul>
@@ -104,12 +114,14 @@ export default function Home() {
 
       {/* Projects section */}
       <p className="mt-10 px-10 text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]
-                    lg:px-20 lg:text-left">Projects</p>
+                    lg:px-20 lg:text-left
+                    2xl:px-32 2xl:text-6xl">Projects</p>
       <div className="grid grid-cols-1 gap-10 p-10 place-items-center
-                      lg:px-20 lg:grid-cols-2">
+                      lg:px-20 lg:grid-cols-2
+                      2xl:grid-cols-3">
         
-        <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px]">
-          <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] grid grid-cols-1 grid-rows-1 items-end">
+        <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] 2xl:w-[400px]">
+          <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] 2xl:w-[400px] grid grid-cols-1 grid-rows-1 items-end">
             <Image 
               src="/verbalex.png" 
               alt="VerbaLex Thumbnail" 
@@ -136,13 +148,13 @@ export default function Home() {
           </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="pt-4 text-4xl font-[family-name:var(--font-titillium-web-semi-bold)]">VerbaLex</p>
-            <Link href={"https://github.com/RitchieP/VerbaLex"} target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9 xl:size-10"/></Link>
+            <Link href={"https://github.com/RitchieP/VerbaLex"} target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9 xl:size-10 2xl:size-9"/></Link>
           </div>
           <p className="text-lg text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Text-to-speech application to help transcribe accented speech.</p>
         </div>
 
-        <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px]">
-          <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] grid grid-cols-1 grid-rows-1 items-end">
+        <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] 2xl:w-[400px]">
+          <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] 2xl:w-[400px] grid grid-cols-1 grid-rows-1 items-end">
             <Image 
               src="/myrescue.png" 
               alt="MyRescue Thumbnail" 
@@ -168,14 +180,14 @@ export default function Home() {
           </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="pt-4 text-4xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyRescue</p>
-            <a href="https://github.com/RitchieP/my_rescue" target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9 xl:size-10"/></a>
+            <a href="https://github.com/RitchieP/my_rescue" target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9 xl:size-10 2xl:size-9"/></a>
           </div>
           <p className="text-lg text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Resource management system during a natural disaster.</p>
         </div>
 
-        <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px]">
+        <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] 2xl:w-[400px]">
           {/* TODO: Replace this with Image later */}
-          <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] grid grid-cols-1 grid-rows-1 items-end">
+          <div className="w-[360px] md:w-[480px] lg:w-[360px] xl:w-[480px] 2xl:w-[400px] grid grid-cols-1 grid-rows-1 items-end">
             <Image 
               src="/myusm.png" 
               alt="MyUSM Thumbnail" 
@@ -197,7 +209,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row place-items-center justify-between">
             <p className="pt-4 text-4xl font-[family-name:var(--font-titillium-web-semi-bold)]">MyUSM</p>
-            <a href="https://github.com/GDSC-USM/MyUSM" target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9 xl:size-10"/></a>
+            <a href="https://github.com/GDSC-USM/MyUSM" target="blank"><TbCircleArrowUpRight className="size-8 md:size-10 lg:size-9 xl:size-10 2xl:size-9"/></a>
           </div>
           <p className="text-lg text-unhighlighted font-[family-name:var(--font-titillium-web-regular)]">Centralized information system for all individuals associated with Universiti Sains Malaysia.</p>
         </div>
@@ -206,13 +218,15 @@ export default function Home() {
 
       {/* Skills section */}
       <p className="mt-10 px-10 text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]
-                    lg:px-20 lg:text-left">Skills</p>
+                    lg:px-20 lg:text-left
+                    2xl:px-32 2xl:text-6xl">Skills</p>
       <div className="my-10 flex flex-col justify-center place-items-center place-content-center gap-10 text-center
-                      md:grid md:grid-cols-2
-                      lg:px-20 lg:flex lg:flex-row lg:justify-between lg:place-items-start lg:text-left">
+                      md:grid md:grid-cols-2 text-3xl font-[family-name:var(--font-titillium-web-bold)]
+                      lg:px-20 lg:flex lg:flex-row lg:justify-between lg:place-items-start lg:text-left
+                      2xl:px-32 2xl:text-4xl">
         <div>
-          <p className="text-3xl font-[family-name:var(--font-titillium-web-bold)]">Frontend</p>
-          <ul className="mt-4 text-2xl font-[family-name:var(--font-titillium-web-regular)]">
+          <p>Frontend</p>
+          <ul className="mt-4 text-3xl font-[family-name:var(--font-titillium-web-regular)]">
             <li>ReactJS</li>
             <li>Tailwind CSS</li>
             <li>Flutter</li>
@@ -220,8 +234,8 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="text-3xl font-[family-name:var(--font-titillium-web-bold)]">Backend</p>
-          <ul className="mt-4 text-2xl font-[family-name:var(--font-titillium-web-regular)]">
+          <p>Backend</p>
+          <ul className="mt-4 text-3xl font-[family-name:var(--font-titillium-web-regular)]">
             <li>NodeJS</li>
             <li>MongoDB</li>
             <li>Express</li>
@@ -230,8 +244,8 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="text-3xl font-[family-name:var(--font-titillium-web-bold)]">Soft Skills</p>
-          <ul className="mt-4 text-2xl font-[family-name:var(--font-titillium-web-regular)]">
+          <p>Soft Skills</p>
+          <ul className="mt-4 text-3xl font-[family-name:var(--font-titillium-web-regular)]">
             <li>Collaboration</li>
             <li>Effective Communication</li>
             <li>Leadership</li>
@@ -240,8 +254,8 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="text-3xl font-[family-name:var(--font-titillium-web-bold)]">Others</p>
-          <ul className="mt-4 text-2xl font-[family-name:var(--font-titillium-web-regular)]">
+          <p>Others</p>
+          <ul className="mt-4 text-3xl font-[family-name:var(--font-titillium-web-regular)]">
             <li>Python</li>
             <li>ElectronJS</li>
             <li>Google Cloud Services</li>
@@ -252,9 +266,11 @@ export default function Home() {
 
       {/* About me section */}
       <p className="mt-10 px-10 text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]
-                    lg:px-20 lg:text-left">How I got here?</p>
+                    lg:px-20 lg:text-left
+                    2xl:mt-20 2xl:px-32 2xl:text-6xl">How I got here?</p>
       <div className="p-10 text-xl text-justify font-[family-name:var(--font-titillium-web-regular)]
-                      lg:px-20">
+                      lg:px-20
+                      2xl:px-32 2xl:text-2xl">
         <p>
         My story as a developer began back in <span className="text-secondary">2016</span>, when I joined the robotics club back in high school. That was the first ever time I was able to turn a few lines of blocks into actual output, tangible by hand.
         <br/>
@@ -274,15 +290,18 @@ export default function Home() {
 
       {/* Contact me section */}
       <p className="mt-10 px-10 text-5xl text-center font-[family-name:var(--font-titillium-web-bold)]
-                    lg:px-20 lg:text-left">Interested in <span className="text-secondary">joining forces?</span></p>
+                    lg:px-20 lg:text-left
+                    2xl:px-32 2xl:text-6xl">Interested in <span className="text-secondary">joining forces?</span></p>
       <div className="px-10 mb-10 grid grid-cols-3
                       md:grid-cols-5
                       lg:px-20 lg:grid-cols-10
-                      xl:grid-cols-12">
+                      xl:grid-cols-12
+                      2xl:px-32 2xl:grid-cols-11">
         <a
           className="my-8 p-2 flex flex-row items-center justify-center text-xs col-start-2 gap-3 bg-secondary rounded-xl text-background font-[family-name:var(--font-titillium-web-semi-bold)]
                      md:col-start-3 md:text-lg
-                     lg:col-start-1 lg:col-span-2 lg:text-xl"
+                     lg:col-start-1 lg:col-span-2 lg:text-xl
+                     2xl:col-span-1"
           href="mailto:ritchiepoh@gmail.com"
           target="_blank"
         >
